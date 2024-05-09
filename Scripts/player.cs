@@ -54,8 +54,7 @@ public partial class player : CharacterBody3D
 	{
 		if (@event is InputEventMouseMotion mouseEvent)
 		{
-			MouseSensitivity = 0.001f;
-			Rotation= new Vector3(Rotation.X - mouseEvent.Relative.Y * MouseSensitivity, Rotation.Y - mouseEvent.Relative.X * MouseSensitivity, Rotation.Z );
+			Rotation= new Vector3(Rotation.X, Rotation.Y - mouseEvent.Relative.X * MouseSensitivity, Rotation.Z );
 		}
 	}
 }
