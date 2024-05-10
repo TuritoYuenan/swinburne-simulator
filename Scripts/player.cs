@@ -4,6 +4,7 @@ using System;
 public partial class player : CharacterBody3D
 {    
 	public float JumpVelocity { get; private set; } = 15.0f;
+	public float MaxJumpHeight { get; private set; } = 5.0f;
 	public float Gravity { get; private set; } = -9.8f;
 	public bool jumping = false;
 	public float Speed { get; private set; } = 5.0f;
@@ -22,17 +23,17 @@ public partial class player : CharacterBody3D
 		Vector3 velocity = Velocity;
 		// Handle Jump.
 		
-		if (Input.IsActionPressed("jump"))
+		if (Input.IsActionPressed("jump")&&GlobalTransform.Origin.Y < MaxJumpHeight)
 		{
-			if(velocity.Y < JumpVelocity)
+			if(IsOnFloor())
 			{
 				jumping = true;
 				velocity.Y = Mathf.MoveToward(JumpVelocity, 0, Speed);
 			}
-			else
-			{
-				jumping = false;
-			}
+		}
+		else
+		{
+			jumping = false;
 		}
 		if(!IsOnFloor()&&!jumping)
 		{

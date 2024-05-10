@@ -14,11 +14,9 @@ script = ExtResource("1_01gam")
 
 [node name="Head" parent="." instance=ExtResource("2_hudqs")]
 transform = Transform3D(0.0570408, 0.0417925, 0.997497, 0.00997403, 0.99905, -0.0424279, -0.998322, 0.0123692, 0.0565694, -0.131368, 2.36976, -0.0132995)
-script = null
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_0ljgs")]
 transform = Transform3D(-0.0964279, -0.743775, 0, 0.743775, -0.0964279, 0, 0, 0, 0.75, -0.143879, 0.562229, -0.0685079)
-script = null
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.0491268, 1.3937, 0)
