@@ -1,20 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cakc50hpwgu0h"]
+[gd_scene load_steps=5 format=3 uid="uid://cakc50hpwgu0h"]
 
 [ext_resource type="Script" path="res://Scripts/head.cs" id="1_soy3s"]
 [ext_resource type="Texture2D" uid="uid://bu7snd50s35xo" path="res://the-amazing-digital-circus-gummigoo-head-v2/source/gummigoo/Handle1_diff.png" id="2_4r68v"]
 [ext_resource type="ArrayMesh" uid="uid://bhom6ldu6a8cu" path="res://the-amazing-digital-circus-gummigoo-head-v2/source/gummigoo/gummigoo.obj" id="3_e8k7o"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_t5hy6"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2wd0o"]
 albedo_texture = ExtResource("2_4r68v")
 
-[node name="Head" type="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.97959, 0.923864, 0)
+[node name="Node3D" type="Node3D"]
 script = ExtResource("1_soy3s")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_t5hy6")
+MouseSensitivity = null
 
 [node name="Gummigoo" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.0461127, 0, -0.998936, 0, 1, 0, 0.998936, 0, -0.0461127, -1.13334, -1.04556, 1.90539)
@@ -22,4 +17,4 @@ material_override = SubResource("StandardMaterial3D_2wd0o")
 mesh = ExtResource("3_e8k7o")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(-0.112579, 0, -0.993643, 0, 1, 0, 0.993643, 0, -0.112579, 0.6008, 0, 0.085109)
+transform = Transform3D(-0.000837727, 0, -1, 0, 1, 0, 1, 0, -0.000837727, 1.22297, 0.199103, 0)

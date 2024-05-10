@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpdmrej7m4hr4"]
+
+[ext_resource type="Script" path="res://Scripts/player_body.cs" id="1_032e6"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ygi52"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(-0.0840898, -0.492878, 0, 0.492878, -0.0840898, 0, 0, 0, 0.5, 0, 0, 0)
+script = ExtResource("1_032e6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.331644, -1.97231, 0, 1.97231, 0.331644, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_ygi52")

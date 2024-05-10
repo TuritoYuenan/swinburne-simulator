@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dcswd3sbhkfea"]
+[gd_scene load_steps=6 format=3 uid="uid://dcswd3sbhkfea"]
 
-[ext_resource type="PackedScene" uid="uid://0oq7nr0p27ci" path="res://Scenes/player.tscn" id="1_gv3x6"]
-[ext_resource type="PackedScene" uid="uid://cakc50hpwgu0h" path="res://Scenes/head.tscn" id="2_x3qgp"]
+[ext_resource type="PackedScene" uid="uid://ci7lh7e70cf5i" path="res://Scenes/camera.tscn" id="2_kupg0"]
+[ext_resource type="PackedScene" uid="uid://0oq7nr0p27ci" path="res://Scenes/player.tscn" id="2_ty0eh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_owhdp"]
 size = Vector3(60, 2, 60)
@@ -12,15 +12,6 @@ metallic = 0.4
 [sub_resource type="BoxMesh" id="BoxMesh_k6qlf"]
 material = SubResource("StandardMaterial3D_j5gxl")
 size = Vector3(60, 2, 60)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rrytg"]
-vertex_color_is_srgb = true
-albedo_color = Color(0.92407, 0.554863, 0.171821, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_eeq7j"]
-material = SubResource("StandardMaterial3D_rrytg")
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_yb2bq"]
 
 [node name="Campus" type="Node"]
 
@@ -36,17 +27,9 @@ mesh = SubResource("BoxMesh_k6qlf")
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 30, 0)
 shadow_enabled = true
 
-[node name="Player" parent="." instance=ExtResource("1_gv3x6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.64631, 1.01672, 0.00535786)
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_kupg0")]
+transform = Transform3D(-0.0385622, 0, 0.999256, 0, 1, 0, -0.999256, 0, -0.0385622, 24.0111, 1.41765, 8.60347)
+script = null
 
-[node name="Head" parent="." instance=ExtResource("2_x3qgp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.800147, 3.19314, -0.0495676)
-
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(-0.0385622, 0, 0.999256, 0, 1, 0, -0.999256, 0, -0.0385622, 24.0111, 2.04957, -1.31876)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-mesh = SubResource("SphereMesh_eeq7j")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-shape = SubResource("SphereShape3D_yb2bq")
+[node name="Player" parent="." instance=ExtResource("2_ty0eh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.64631, 15.962, 0.00535786)

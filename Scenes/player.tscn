@@ -1,18 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://0oq7nr0p27ci"]
+[gd_scene load_steps=5 format=3 uid="uid://0oq7nr0p27ci"]
 
 [ext_resource type="Script" path="res://Scripts/player.cs" id="1_01gam"]
+[ext_resource type="PackedScene" uid="uid://cakc50hpwgu0h" path="res://Scenes/head.tscn" id="2_hudqs"]
+[ext_resource type="PackedScene" uid="uid://bpdmrej7m4hr4" path="res://Scenes/testbody.tscn" id="3_0ljgs"]
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_d27xm"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_kupw5"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mvfe0"]
+radius = 0.602347
+height = 2.2059
 
 [node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.64631, 1.79906, 0.00535786)
 script = ExtResource("1_01gam")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("CapsuleShape3D_d27xm")
+[node name="Head" parent="." instance=ExtResource("2_hudqs")]
+transform = Transform3D(0.0570408, 0.0417925, 0.997497, 0.00997403, 0.99905, -0.0424279, -0.998322, 0.0123692, 0.0565694, -0.131368, 2.36976, -0.0132995)
+script = null
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-mesh = SubResource("CapsuleMesh_kupw5")
+[node name="CharacterBody3D" parent="." instance=ExtResource("3_0ljgs")]
+transform = Transform3D(-0.0964279, -0.743775, 0, 0.743775, -0.0964279, 0, 0, 0, 0.75, -0.143879, 0.562229, -0.0685079)
+script = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.0491268, 1.3937, 0)
+shape = SubResource("CapsuleShape3D_mvfe0")
