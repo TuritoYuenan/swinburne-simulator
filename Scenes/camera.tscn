@@ -12,7 +12,6 @@ material = SubResource("StandardMaterial3D_g2n7e")
 [sub_resource type="SphereShape3D" id="SphereShape3D_l8wb1"]
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
-transform = Transform3D(-0.0385622, 0, 0.999256, 0, 1, 0, -0.999256, 0, -0.0385622, 24.0111, 2.04957, -1.31876)
 script = ExtResource("1_k6gxv")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]

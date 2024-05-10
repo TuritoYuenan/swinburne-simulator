@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct4cfccguhfq2"
-path="res://.godot/imported/Handle1_diff.png-ca6a17ee14e3b1c71a37421fc7521c29.ctex"
+path="res://.godot/imported/Handle1_diff.png-8b4bf0c54a0cbbc3dba3b1fae62ca3cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://the-amazing-digital-circus-gummigoo-head-v2/textures/Handle1_diff.png"
-dest_files=["res://.godot/imported/Handle1_diff.png-ca6a17ee14e3b1c71a37421fc7521c29.ctex"]
+source_file="res://Textures/Handle1_diff.png"
+dest_files=["res://.godot/imported/Handle1_diff.png-8b4bf0c54a0cbbc3dba3b1fae62ca3cb.ctex"]
 
 [params]
 
