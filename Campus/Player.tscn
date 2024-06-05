@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://kmhllor875d2"]
+
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_sup27"]
+[ext_resource type="Texture2D" uid="uid://bub5cd1mpmfjh" path="res://Resources/Textures/RazorPrototype.png" id="2_lcc18"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_d8l6n"]
+radius = 72.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_sup27")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_d8l6n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_lcc18")
