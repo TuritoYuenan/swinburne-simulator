@@ -1,4 +1,4 @@
-![](Assets/github.svg)
+![](Resources/github.svg)
 
 # Swinburne Simulator
 
