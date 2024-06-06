@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f4gvfy1qqr14"
-path="res://.godot/imported/DoorGarden.png-6bad17508c48ece0e8f2ff1761578741.ctex"
+uid="uid://jxjlie56tpv6"
+path="res://.godot/imported/Doors.png-5306685f9b40b7ee076e7f0b63741555.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Textures/DoorGarden.png"
-dest_files=["res://.godot/imported/DoorGarden.png-6bad17508c48ece0e8f2ff1761578741.ctex"]
+source_file="res://Resources/Textures/Doors.png"
+dest_files=["res://.godot/imported/Doors.png-5306685f9b40b7ee076e7f0b63741555.ctex"]
 
 [params]
 
