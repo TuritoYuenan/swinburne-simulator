@@ -1,6 +1,6 @@
-# Swinburne Simulator
+![Project GitHub Banner](Swinburne%20Simulator.png)
 
-![Project GitHub Banner](./banner.png)
+# Swinburne Simulator
 
 **<center>Visit the Swinburne University HCMC Campus via an interactive 2D experience</center>**
 
