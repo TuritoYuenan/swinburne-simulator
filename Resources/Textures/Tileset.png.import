@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://jxjlie56tpv6"
-path="res://.godot/imported/Doors.png-5306685f9b40b7ee076e7f0b63741555.ctex"
+uid="uid://ro3qqklc0xlx"
+path="res://.godot/imported/Tileset.png-030eb64c0834d816ebd185f2c706a22f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Textures/Doors.png"
-dest_files=["res://.godot/imported/Doors.png-5306685f9b40b7ee076e7f0b63741555.ctex"]
+source_file="res://Resources/Textures/Tileset.png"
+dest_files=["res://.godot/imported/Tileset.png-030eb64c0834d816ebd185f2c706a22f.ctex"]
 
 [params]
 

@@ -1,5 +1,7 @@
 using Godot;
 
+namespace SwinburneSimulator;
+
 public partial class Player : CharacterBody2D
 {
 	[Export]

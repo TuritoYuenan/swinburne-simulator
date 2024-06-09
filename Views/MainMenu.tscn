@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://iedskap15can"]
+[gd_scene load_steps=6 format=3 uid="uid://iedskap15can"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_d4geo"]
 [ext_resource type="Texture2D" uid="uid://dkis5bofn5d5g" path="res://Resources/logo.png" id="1_e2yii"]
-[ext_resource type="Script" path="res://Scripts/Buttons.gd" id="2_tykcb"]
+[ext_resource type="Script" path="res://Scripts/ButtonStart.cs" id="3_d584f"]
+[ext_resource type="Script" path="res://Scripts/ButtonCredits.cs" id="4_6dbf6"]
 [ext_resource type="AudioStream" uid="uid://cgca50kcn3ll2" path="res://Audio/SatelliteTorifune.mp3" id="5_b1ilq"]
 
 [node name="Container" type="Control"]
@@ -29,7 +30,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.133333, 0.133333, 0.133333, 0.392157)
+color = Color(0.0666667, 0.0666667, 0.105882, 0.392157)
 
 [node name="Center" type="VBoxContainer" parent="."]
 layout_mode = 1
@@ -55,30 +56,50 @@ stretch_mode = 5
 layout_mode = 2
 theme_override_constants/separation = 16
 alignment = 1
-script = ExtResource("2_tykcb")
 
 [node name="StartButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 text = "Start"
+script = ExtResource("3_d584f")
 
 [node name="SettingsButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 text = "Settings"
 
 [node name="CreditsButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
+theme_override_font_sizes/font_size = 24
 text = "Credits"
-
-[node name="Label" type="Label" parent="Center"]
-layout_mode = 2
-text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"
-horizontal_alignment = 1
-vertical_alignment = 2
+script = ExtResource("4_6dbf6")
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_b1ilq")
 volume_db = -80.0
 autoplay = true
 
-[connection signal="pressed" from="Center/Buttons/StartButton" to="Center/Buttons" method="_on_start_button_pressed"]
-[connection signal="pressed" from="Center/Buttons/CreditsButton" to="Center/Buttons" method="_on_credits_button_pressed"]
+[node name="Copyright" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -374.0
+offset_top = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"
+
+[node name="Version" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 374.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cetoy028gj3d0"]
+[gd_scene load_steps=7 format=3 uid="uid://cetoy028gj3d0"]
 
 [ext_resource type="Texture2D" uid="uid://dkis5bofn5d5g" path="res://Resources/logo.png" id="1_ob5m1"]
-[ext_resource type="Script" path="res://Scripts/Buttons.gd" id="2_u7aqq"]
+[ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="3_hl0i6"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/arrow-return-left.svg" id="3_kt7vk"]
 [ext_resource type="Texture2D" uid="uid://dvowokwsrfn8q" path="res://Resources/Icons/github.svg" id="4_njrss"]
+[ext_resource type="Script" path="res://Scripts/ButtonGitHub.cs" id="5_fsj04"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jnu5b"]
 font_size = 24
@@ -40,17 +41,15 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_constants/separation = 16
 alignment = 1
-script = ExtResource("2_u7aqq")
 
 [node name="BackButton" type="Button" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Back to Main Menu"
 icon = ExtResource("3_kt7vk")
+script = ExtResource("3_hl0i6")
 
-[node name="CodeButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="GitHubButton" type="Button" parent="VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "View Source code"
 icon = ExtResource("4_njrss")
-
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/BackButton" to="VBoxContainer/HBoxContainer" method="_on_back_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/CodeButton" to="VBoxContainer/HBoxContainer" method="_on_code_button_pressed"]
+script = ExtResource("5_fsj04")
