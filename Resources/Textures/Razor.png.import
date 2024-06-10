@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ro3qqklc0xlx"
-path="res://.godot/imported/Tileset.png-030eb64c0834d816ebd185f2c706a22f.ctex"
+uid="uid://boillxd0n557g"
+path="res://.godot/imported/Razor.png-03a917cc6b608c00da3032077af75851.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Textures/Tileset.png"
-dest_files=["res://.godot/imported/Tileset.png-030eb64c0834d816ebd185f2c706a22f.ctex"]
+source_file="res://Resources/Textures/Razor.png"
+dest_files=["res://.godot/imported/Razor.png-03a917cc6b608c00da3032077af75851.ctex"]
 
 [params]
 

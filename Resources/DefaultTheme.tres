@@ -1,17 +1,15 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cu65sgs14lgu2"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cu65sgs14lgu2"]
 
 [ext_resource type="FontFile" uid="uid://bjbk2e3sot42t" path="res://Resources/Fonts/consolab.ttf" id="1_7othg"]
 [ext_resource type="FontFile" uid="uid://b74i4chtq7rxb" path="res://Resources/Fonts/consola.ttf" id="1_apd8n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wp07q"]
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+bg_color = Color(0, 0, 0, 1)
+border_width_bottom = 5
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wuvoj"]
 content_margin_left = 10.0
@@ -19,26 +17,31 @@ content_margin_top = 10.0
 content_margin_right = 10.0
 content_margin_bottom = 10.0
 bg_color = Color(1, 1, 1, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_width_bottom = 3
+border_width_bottom = 5
 border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lbj0v"]
+bg_color = Color(1, 1, 1, 1)
+border_width_top = 5
+border_color = Color(0, 0, 0, 1)
 
 [resource]
 default_font = ExtResource("1_apd8n")
 default_font_size = 24
 Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_focus_color = Color(0.133333, 0.133333, 0.133333, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 Button/constants/h_separation = 16
 Button/constants/icon_max_width = 32
 Button/fonts/font = ExtResource("1_7othg")
 Button/styles/hover = SubResource("StyleBoxFlat_wp07q")
 Button/styles/normal = SubResource("StyleBoxFlat_wuvoj")
+Button/styles/pressed = SubResource("StyleBoxFlat_lbj0v")
 MarginContainer/constants/margin_bottom = 32
 MarginContainer/constants/margin_left = 32
 MarginContainer/constants/margin_right = 32

@@ -1,20 +1,21 @@
 [gd_scene load_steps=4 format=3 uid="uid://kmhllor875d2"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_sup27"]
-[ext_resource type="Texture2D" uid="uid://bub5cd1mpmfjh" path="res://Resources/Textures/RazorPrototype.png" id="2_lcc18"]
+[ext_resource type="Texture2D" uid="uid://boillxd0n557g" path="res://Resources/Textures/Razor.png" id="2_pt807"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_d8l6n"]
-radius = 16.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y635o"]
+radius = 5.0
+height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_sup27")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -20)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_lcc18")
+[node name="Razor" type="Sprite2D" parent="."]
+position = Vector2(2, -35)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_pt807")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_d8l6n")
+shape = SubResource("CapsuleShape2D_y635o")
