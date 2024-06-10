@@ -16,6 +16,14 @@ run/main_scene="res://Views/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://Resources/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="res://Resources/DefaultBusLayout.tres"
+
+[autoload]
+
+BackgroundMusic="*res://Views/BackgroundMusic.tscn"
+
 [display]
 
 window/size/viewport_width=1280

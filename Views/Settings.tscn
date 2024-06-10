@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=3 uid="uid://7lpg0vhjwnyq"]
+
+[ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_yccn2"]
+[ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="2_5kcmp"]
+[ext_resource type="Script" path="res://Scripts/VolumeSlider.cs" id="2_ul5t4"]
+[ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_q78gw"]
+[ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="4_1xscr"]
+
+[node name="TextureRect" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_5kcmp")
+texture = ExtResource("1_yccn2")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0666667, 0.0666667, 0.105882, 0.392157)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 128
+theme_override_constants/margin_right = 128
+
+[node name="Center" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="AudioSettings" type="VBoxContainer" parent="MarginContainer/Center"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="MarginContainer/Center/AudioSettings"]
+layout_mode = 2
+text = "Master	"
+horizontal_alignment = 1
+
+[node name="VolumeSlider" type="HSlider" parent="MarginContainer/Center/AudioSettings"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+script = ExtResource("2_ul5t4")
+
+[node name="Label2" type="Label" parent="MarginContainer/Center/AudioSettings"]
+layout_mode = 2
+text = "Background Music"
+horizontal_alignment = 1
+
+[node name="VolumeSlider2" type="HSlider" parent="MarginContainer/Center/AudioSettings"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+script = ExtResource("2_ul5t4")
+AudioBusName = "BGM"
+
+[node name="BackButton" type="Button" parent="MarginContainer/Center"]
+layout_mode = 2
+text = "Back to Main Menu"
+icon = ExtResource("3_q78gw")
+expand_icon = true
+script = ExtResource("4_1xscr")
