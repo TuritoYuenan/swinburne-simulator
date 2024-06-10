@@ -1,29 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://iedskap15can"]
+[gd_scene load_steps=12 format=3 uid="uid://iedskap15can"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_d4geo"]
 [ext_resource type="Texture2D" uid="uid://dkis5bofn5d5g" path="res://Resources/logo.png" id="1_e2yii"]
+[ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="3_1eklk"]
 [ext_resource type="Script" path="res://Scripts/ButtonStart.cs" id="3_d584f"]
+[ext_resource type="Script" path="res://Scripts/ButtonSettings.cs" id="4_0mrdt"]
 [ext_resource type="Script" path="res://Scripts/ButtonCredits.cs" id="4_6dbf6"]
-[ext_resource type="AudioStream" uid="uid://cgca50kcn3ll2" path="res://Audio/SatelliteTorifune.mp3" id="5_b1ilq"]
+[ext_resource type="Texture2D" uid="uid://bqw8ou8scinox" path="res://Resources/Icons/play.svg" id="4_i10ha"]
+[ext_resource type="Script" path="res://Scripts/ButtonQuit.cs" id="5_4feg4"]
+[ext_resource type="Texture2D" uid="uid://bllrv5rm284nk" path="res://Resources/Icons/settings.svg" id="6_sxsl6"]
+[ext_resource type="Texture2D" uid="uid://lecm4n1uv8mt" path="res://Resources/Icons/credits.svg" id="8_tf52j"]
+[ext_resource type="Texture2D" uid="uid://niwlxmlyxr8o" path="res://Resources/Icons/exit.svg" id="10_6f61r"]
 
-[node name="Container" type="Control"]
-layout_mode = 3
+[node name="TextureRect" type="TextureRect"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+theme = ExtResource("3_1eklk")
 texture = ExtResource("1_d4geo")
 
-[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -40,9 +38,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -300.0
-offset_top = -178.5
+offset_top = -240.0
 offset_right = 300.0
-offset_bottom = 178.5
+offset_bottom = 240.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 64
@@ -54,52 +52,52 @@ stretch_mode = 5
 
 [node name="Buttons" type="VBoxContainer" parent="Center"]
 layout_mode = 2
-theme_override_constants/separation = 16
+theme_override_constants/separation = 8
 alignment = 1
 
 [node name="StartButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
 text = "Start"
+icon = ExtResource("4_i10ha")
+expand_icon = true
 script = ExtResource("3_d584f")
 
 [node name="SettingsButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
 text = "Settings"
+icon = ExtResource("6_sxsl6")
+expand_icon = true
+script = ExtResource("4_0mrdt")
 
 [node name="CreditsButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
 text = "Credits"
+icon = ExtResource("8_tf52j")
+expand_icon = true
 script = ExtResource("4_6dbf6")
 
-[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_b1ilq")
-volume_db = -80.0
-autoplay = true
+[node name="ExitButton" type="Button" parent="Center/Buttons"]
+layout_mode = 2
+text = "Exit"
+icon = ExtResource("10_6f61r")
+expand_icon = true
+script = ExtResource("5_4feg4")
 
-[node name="Copyright" type="Label" parent="."]
+[node name="HBoxContainer" type="HSplitContainer" parent="."]
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -374.0
-offset_top = -23.0
-grow_horizontal = 0
+offset_top = -21.0
+grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 20
+
+[node name="Copyright" type="Label" parent="HBoxContainer"]
+layout_mode = 2
 text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"
 
-[node name="Version" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -23.0
-offset_right = 374.0
-grow_vertical = 0
-theme_override_font_sizes/font_size = 20
-text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"
+[node name="Version" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Version 0.2.0"
+horizontal_alignment = 2

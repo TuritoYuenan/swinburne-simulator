@@ -1,31 +1,44 @@
-[gd_scene load_steps=7 format=3 uid="uid://cetoy028gj3d0"]
+[gd_scene load_steps=9 format=3 uid="uid://cetoy028gj3d0"]
 
+[ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_8q873"]
 [ext_resource type="Texture2D" uid="uid://dkis5bofn5d5g" path="res://Resources/logo.png" id="1_ob5m1"]
 [ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="3_hl0i6"]
-[ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/arrow-return-left.svg" id="3_kt7vk"]
+[ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="3_j2g1p"]
+[ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_kt7vk"]
 [ext_resource type="Texture2D" uid="uid://dvowokwsrfn8q" path="res://Resources/Icons/github.svg" id="4_njrss"]
 [ext_resource type="Script" path="res://Scripts/ButtonGitHub.cs" id="5_fsj04"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jnu5b"]
 font_size = 24
 
-[node name="Credits" type="MarginContainer"]
+[node name="Credits" type="TextureRect"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 40
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 40
-theme_override_constants/margin_bottom = 40
+theme = ExtResource("3_j2g1p")
+texture = ExtResource("1_8q873")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0666667, 0.0666667, 0.105882, 0.392157)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 1240.0
+offset_bottom = 680.0
 theme_override_constants/separation = 32
 alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer"]
+[node name="Logo" type="TextureRect" parent="VBoxContainer"]
 layout_mode = 2
 texture = ExtResource("1_ob5m1")
 stretch_mode = 5
@@ -37,19 +50,19 @@ Source code: https://github.com/TuritoYuenan/swinburne-simulator"
 label_settings = SubResource("LabelSettings_jnu5b")
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="Buttons" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_constants/separation = 16
 alignment = 1
 
-[node name="BackButton" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-text = "Back to Main Menu"
-icon = ExtResource("3_kt7vk")
-script = ExtResource("3_hl0i6")
-
-[node name="GitHubButton" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="GitHubButton" type="Button" parent="VBoxContainer/Buttons"]
 layout_mode = 2
 text = "View Source code"
 icon = ExtResource("4_njrss")
 script = ExtResource("5_fsj04")
+
+[node name="BackButton" type="Button" parent="VBoxContainer/Buttons"]
+layout_mode = 2
+text = "Back to Main Menu"
+icon = ExtResource("3_kt7vk")
+script = ExtResource("3_hl0i6")
