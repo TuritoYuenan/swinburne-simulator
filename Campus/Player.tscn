@@ -3,9 +3,8 @@
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_sup27"]
 [ext_resource type="Texture2D" uid="uid://boillxd0n557g" path="res://Resources/Textures/Razor.png" id="2_pt807"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_y635o"]
-radius = 5.0
-height = 20.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_asvio"]
+radius = 8.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 4
@@ -13,9 +12,10 @@ collision_mask = 2
 script = ExtResource("1_sup27")
 
 [node name="Razor" type="Sprite2D" parent="."]
-position = Vector2(2, -35)
+position = Vector2(2, -56)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_pt807")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_y635o")
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_asvio")
