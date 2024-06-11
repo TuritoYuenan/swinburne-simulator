@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://cetoy028gj3d0"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_8q873"]
-[ext_resource type="Texture2D" uid="uid://dkis5bofn5d5g" path="res://Resources/logo.png" id="1_ob5m1"]
+[ext_resource type="Texture2D" uid="uid://3kwcdrwp6l34" path="res://Resources/logo.svg" id="3_en1xo"]
 [ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="3_hl0i6"]
 [ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="3_j2g1p"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_kt7vk"]
@@ -40,7 +40,7 @@ alignment = 1
 
 [node name="Logo" type="TextureRect" parent="VBoxContainer"]
 layout_mode = 2
-texture = ExtResource("1_ob5m1")
+texture = ExtResource("3_en1xo")
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="VBoxContainer"]
