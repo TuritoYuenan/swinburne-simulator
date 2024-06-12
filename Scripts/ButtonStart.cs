@@ -6,6 +6,7 @@ public partial class ButtonStart : Button
 {
 	public override void _Pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Campus/Floor9.tscn");
+		var transition = GetTree().Root.GetNode<SceneTransition>("SceneTransition");
+		transition.TransitionTo("res://Campus/Floor5.tscn");
 	}
 }

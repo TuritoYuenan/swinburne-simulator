@@ -6,6 +6,7 @@ public partial class ButtonBack : Button
 {
 	public override void _Pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Views/MainMenu.tscn");
+		var transition = GetTree().Root.GetNode<SceneTransition>("SceneTransition");
+		transition.TransitionTo("res://Views/MainMenu.tscn");
 	}
 }

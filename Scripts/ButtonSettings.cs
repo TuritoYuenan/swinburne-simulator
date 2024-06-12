@@ -6,6 +6,7 @@ public partial class ButtonSettings : Button
 {
 	public override void _Pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Views/Settings.tscn");
+		var transition = GetTree().Root.GetNode<SceneTransition>("SceneTransition");
+		transition.TransitionTo("res://Views/Settings.tscn");
 	}
 }

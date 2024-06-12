@@ -15,6 +15,9 @@ public partial class SceneTransition : ColorRect
 		_animPlayer.PlayBackwards("Fade");
 	}
 
+	/// <summary>
+	/// Transition to another scene
+	/// </summary>
 	public void TransitionTo(string nextScene)
 	{
 		_animPlayer.Play("Fade");

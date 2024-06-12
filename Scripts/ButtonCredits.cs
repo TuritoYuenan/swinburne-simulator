@@ -6,6 +6,7 @@ public partial class ButtonCredits : Button
 {
 	public override void _Pressed()
 	{
-		GetTree().ChangeSceneToFile("res://Views/Credits.tscn");
+		var transition = GetTree().Root.GetNode<SceneTransition>("SceneTransition");
+		transition.TransitionTo("res://Views/Credits.tscn");
 	}
 }
