@@ -2,7 +2,7 @@ using Godot;
 
 public partial class Elevator : Area2D
 {
-	private Node _ui = GD.Load<PackedScene>("res://Views/Elevator.tscn").Instantiate();
+	private Node _ui = GD.Load<PackedScene>("res://Views/ElevatorUI.tscn").Instantiate();
 
 	public override void _Ready()
 	{
@@ -15,7 +15,7 @@ public partial class Elevator : Area2D
 		GD.Print(body.Name, " entered elevator");
 
 		// Hide HUD
-		GetTree().Root.GetNode<CanvasLayer>("HUD").Visible = false;
+		GetTree().Root.GetNode<CanvasLayer>("FloorLevel/HUD").Visible = false;
 
 		// Show UI
 		GetTree().Root.AddChild(_ui);
@@ -26,7 +26,7 @@ public partial class Elevator : Area2D
 		GD.Print(body.Name, " exited elevator");
 
 		// Show HUD
-		GetTree().Root.GetNode<CanvasLayer>("HUD").Visible = true;
+		GetTree().Root.GetNode<CanvasLayer>("FloorLevel/HUD").Visible = true;
 
 		// Hide UI
 		GetTree().Root.RemoveChild(_ui);

@@ -10,10 +10,13 @@ public partial class ButtonElevator : Button
 
 	public override void _Pressed()
 	{
-		string floorScene = string.Format("res://Campus/Floor{0}.tscn", FloorNumber.ToString());
 		var transition = GetTree().Root.GetNode<SceneTransition>("SceneTransition");
+		var elevatorUI = GetTree().Root.GetNode<CanvasLayer>("ElevatorUI");
+
+		string floorScene = string.Format("res://Campus/Floor{0}.tscn", FloorNumber.ToString());
 
 		GD.Print("Going to Floor ", FloorNumber);
+		GetTree().Root.RemoveChild(elevatorUI);
 		transition.TransitionTo(floorScene);
 	}
 }

@@ -5,7 +5,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_b6hcr"]
 font_size = 64
 
-[node name="Elevator" type="CanvasLayer"]
+[node name="ElevatorUI" type="CanvasLayer"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 anchors_preset = 15

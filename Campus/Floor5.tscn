@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cd766ssdk686k" path="res://Campus/Elevator.tscn" id="2_mau3n"]
 [ext_resource type="PackedScene" uid="uid://b5s2hnud0tnbx" path="res://Views/HUD.tscn" id="3_pbeja"]
 
-[node name="Floor9" type="Node2D"]
+[node name="FloorLevel" type="Node2D"]
 
 [node name="Floor" type="TileMap" parent="."]
 y_sort_enabled = true
