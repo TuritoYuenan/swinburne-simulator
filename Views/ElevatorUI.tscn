@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba1qg742vdncy"]
+
+[ext_resource type="Script" path="res://Scripts/ButtonElevator.cs" id="2_sw6xc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b6hcr"]
+font_size = 64
+
+[node name="Elevator" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0666667, 0.0666667, 0.105882, 0.392157)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HSplitContainer"]
+layout_mode = 2
+text = "Go to Floor"
+label_settings = SubResource("LabelSettings_b6hcr")
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 3
+
+[node name="Button11" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 11"
+
+[node name="Button10" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 10"
+
+[node name="Button9" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+text = "Floor 9"
+script = ExtResource("2_sw6xc")
+FloorNumber = 9
+
+[node name="Button8" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 8"
+
+[node name="Button7" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 7"
+
+[node name="Button6" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 6"
+
+[node name="Button5" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+text = "Floor 5"
+script = ExtResource("2_sw6xc")
+
+[node name="Button4" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 4"
+
+[node name="Button3" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 3"
+
+[node name="Button2" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 2"
+
+[node name="Button1" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor 1"
+
+[node name="ButtonB1" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
+layout_mode = 2
+disabled = true
+text = "Floor B1"

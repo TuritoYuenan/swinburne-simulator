@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd766ssdk686k"]
+
+[ext_resource type="Script" path="res://Scripts/Elevator.cs" id="1_vcfh4"]
+
+[node name="Elevator" type="Area2D"]
+y_sort_enabled = true
+collision_mask = 4
+script = ExtResource("1_vcfh4")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(188, 0, 0, 96, -188, 0, 0, -96)
