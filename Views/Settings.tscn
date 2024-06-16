@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://7lpg0vhjwnyq"]
+[gd_scene load_steps=5 format=3 uid="uid://7lpg0vhjwnyq"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_yccn2"]
-[ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="2_5kcmp"]
 [ext_resource type="Script" path="res://Scripts/VolumeSlider.cs" id="2_ul5t4"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_q78gw"]
 [ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="4_1xscr"]
@@ -12,7 +11,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("2_5kcmp")
 texture = ExtResource("1_yccn2")
 
 [node name="ColorRect" type="ColorRect" parent="."]

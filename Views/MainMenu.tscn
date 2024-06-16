@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://iedskap15can"]
+[gd_scene load_steps=11 format=3 uid="uid://iedskap15can"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_d4geo"]
-[ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="3_1eklk"]
 [ext_resource type="Texture2D" uid="uid://3kwcdrwp6l34" path="res://Resources/logo.svg" id="3_84wc0"]
 [ext_resource type="Script" path="res://Scripts/ButtonStart.cs" id="3_d584f"]
 [ext_resource type="Script" path="res://Scripts/ButtonSettings.cs" id="4_0mrdt"]
@@ -18,7 +17,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("3_1eklk")
 texture = ExtResource("1_d4geo")
 
 [node name="ColorRect" type="ColorRect" parent="."]

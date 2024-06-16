@@ -18,7 +18,7 @@ config/icon="res://Resources/icon.svg"
 
 [audio]
 
-buses/default_bus_layout="res://Resources/DefaultBusLayout.tres"
+buses/default_bus_layout="res://Resources/BusLayout.tres"
 
 [autoload]
 
@@ -40,6 +40,10 @@ project/assembly_name="Swinburne Simulator"
 
 import/blender/enabled=false
 import/fbx/enabled=false
+
+[gui]
+
+theme/custom="res://Resources/UITheme.tres"
 
 [input]
 

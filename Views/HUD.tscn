@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5s2hnud0tnbx"]
+[gd_scene load_steps=3 format=3 uid="uid://b5s2hnud0tnbx"]
 
-[ext_resource type="Theme" uid="uid://cu65sgs14lgu2" path="res://Resources/DefaultTheme.tres" id="1_821p0"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="1_mcue7"]
 [ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="2_uhpxx"]
 
@@ -9,7 +8,6 @@
 [node name="MarginContainer" type="MarginContainer" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
-theme = ExtResource("1_821p0")
 
 [node name="Button" type="Button" parent="MarginContainer"]
 layout_mode = 2
