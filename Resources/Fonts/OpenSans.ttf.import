@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ri1hns8ie8di"
-path="res://.godot/imported/consolai.ttf-d0bafbe03dd8adff07148169874cce29.fontdata"
+uid="uid://kmpbschiifu1"
+path="res://.godot/imported/OpenSans.ttf-e32ae64a091fccddc197602ebf56e33b.fontdata"
 
 [deps]
 
-source_file="res://Resources/Fonts/consolai.ttf"
-dest_files=["res://.godot/imported/consolai.ttf-d0bafbe03dd8adff07148169874cce29.fontdata"]
+source_file="res://Resources/Fonts/OpenSans.ttf"
+dest_files=["res://.godot/imported/OpenSans.ttf-e32ae64a091fccddc197602ebf56e33b.fontdata"]
 
 [params]
 

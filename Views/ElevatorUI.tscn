@@ -29,12 +29,11 @@ alignment = 1
 
 [node name="Label" type="Label" parent="MarginContainer/HSplitContainer"]
 layout_mode = 2
-text = "Go to Floor"
+text = "Go to"
 label_settings = SubResource("LabelSettings_b6hcr")
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer/HSplitContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/h_separation = 16
 theme_override_constants/v_separation = 16
@@ -95,8 +94,3 @@ text = "Floor 2"
 layout_mode = 2
 disabled = true
 text = "Floor 1"
-
-[node name="ButtonB1" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
-layout_mode = 2
-disabled = true
-text = "Floor B1"

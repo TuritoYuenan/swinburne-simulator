@@ -57,45 +57,41 @@ alignment = 1
 layout_mode = 2
 text = "Start"
 icon = ExtResource("4_i10ha")
-expand_icon = true
 script = ExtResource("3_d584f")
 
 [node name="SettingsButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
 text = "Settings"
 icon = ExtResource("6_sxsl6")
-expand_icon = true
 script = ExtResource("4_0mrdt")
 
 [node name="CreditsButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
 text = "Credits"
 icon = ExtResource("8_tf52j")
-expand_icon = true
 script = ExtResource("4_6dbf6")
 
 [node name="ExitButton" type="Button" parent="Center/Buttons"]
 layout_mode = 2
 text = "Exit"
 icon = ExtResource("10_6f61r")
-expand_icon = true
 script = ExtResource("5_4feg4")
 
-[node name="HBoxContainer" type="HSplitContainer" parent="."]
+[node name="HSplitContainer" type="HSplitContainer" parent="."]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -21.0
+offset_top = -25.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Copyright" type="Label" parent="HBoxContainer"]
+[node name="Copyright" type="Label" parent="HSplitContainer"]
 layout_mode = 2
 text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"
 
-[node name="Version" type="Label" parent="HBoxContainer"]
+[node name="Version" type="Label" parent="HSplitContainer"]
 layout_mode = 2
 text = "Version 0.2.0"
 horizontal_alignment = 2
