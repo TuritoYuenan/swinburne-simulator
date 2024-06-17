@@ -2,7 +2,7 @@ using Godot;
 
 namespace SwinburneSimulator;
 
-public partial class SceneTransition : ColorRect
+public partial class SceneTransition : CanvasLayer
 {
 	[Export(PropertyHint.File, "*.tscn")]
 	public string NextScenePath = "";
@@ -11,18 +11,22 @@ public partial class SceneTransition : ColorRect
 
 	public override void _Ready()
 	{
-		_animPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
+		_animPlayer = GetNode<AnimationPlayer>("Solid/AnimationPlayer");
 		_animPlayer.PlayBackwards("Fade");
 	}
 
 	/// <summary>
 	/// Transition to another scene
 	/// </summary>
-	public void TransitionTo(string nextScene)
+	public async void TransitionTo(string nextScene)
 	{
 		_animPlayer.Play("Fade");
+		await ToSignal(_animPlayer, "animation_finished");
 
 		if (NextScenePath != "") { GetTree().ChangeSceneToFile(NextScenePath); }
 		else { GetTree().ChangeSceneToFile(nextScene); }
+
+		_animPlayer.PlayBackwards("Fade");
+		await ToSignal(_animPlayer, "animation_finished");
 	}
 }
