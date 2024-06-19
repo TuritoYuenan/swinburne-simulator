@@ -11,9 +11,11 @@ config_version=5
 [application]
 
 config/name="Swinburne Simulator"
-config/version="0.2.0"
+config/version="0.5.1"
 run/main_scene="res://Views/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+boot_splash/bg_color=Color(0, 0.0666667, 0.133333, 1)
+boot_splash/image="res://Resources/Backgrounds/splash.png"
 config/icon="res://Resources/icon.svg"
 
 [audio]
