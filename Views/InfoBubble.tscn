@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbmy4t60e1cun"]
+
+[ext_resource type="Script" path="res://Scripts/InfoBubble.cs" id="1_lg4ly"]
+
+[node name="InfoBubble" type="CanvasLayer"]
+script = ExtResource("1_lg4ly")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -400.0
+offset_top = -270.0
+offset_right = 400.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Margin" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/Margin"]
+custom_minimum_size = Vector2(128, 32)
+layout_mode = 2
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
