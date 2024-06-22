@@ -8,4 +8,4 @@ collision_mask = 4
 script = ExtResource("1_vcfh4")
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(188, 0, 0, 96, -188, 0, 0, -96)
+polygon = PackedVector2Array(128, 0, 0, 64, -128, 0, 0, -64)

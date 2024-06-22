@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxxsiw8gwhass"]
+
+[ext_resource type="Texture2D" uid="uid://wqqpuhuoi145" path="res://Resources/Textures/Furnitures.png" id="1_76ptw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1omyx"]
+atlas = ExtResource("1_76ptw")
+region = Rect2(512, 0, 196, 256)
+
+[node name="TableStudent" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-96, 0, 32, 64, 96, 32, -32, -32)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -64)
+texture = SubResource("AtlasTexture_1omyx")
