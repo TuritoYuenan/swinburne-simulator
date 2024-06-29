@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wqqpuhuoi145"
-path="res://.godot/imported/Furnitures.png-c476844792e9414aa0c225dcf7d415e8.ctex"
+uid="uid://c71mixevn1aai"
+path="res://.godot/imported/Structures.svg-ba8839694d4f8eea1d3926874b258d62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Textures/Furnitures.png"
-dest_files=["res://.godot/imported/Furnitures.png-c476844792e9414aa0c225dcf7d415e8.ctex"]
+source_file="res://Resources/Textures/Structures.svg"
+dest_files=["res://.godot/imported/Structures.svg-ba8839694d4f8eea1d3926874b258d62.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
