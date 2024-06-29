@@ -1,8 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://ckjhlpfoppdic"]
 
-[ext_resource type="AudioStream" uid="uid://cgca50kcn3ll2" path="res://Audio/SatelliteTorifune.mp3" id="1_wsj6c"]
+[ext_resource type="AudioStream" uid="uid://pit683qo2xjm" path="res://Audio/nostalgic_breakdown.mp3" id="1_j08c5"]
 
 [node name="BackgroundMusic" type="AudioStreamPlayer"]
-stream = ExtResource("1_wsj6c")
+stream = ExtResource("1_j08c5")
 autoplay = true
 bus = &"BGM"
