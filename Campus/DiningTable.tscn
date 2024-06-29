@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://4pi4ufqjo8xq"]
+
+[ext_resource type="Texture2D" uid="uid://cenhepdkxl4wx" path="res://Resources/Textures/Furnitures.svg" id="1_8y74m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5k4oe"]
+atlas = ExtResource("1_8y74m")
+region = Rect2(256, 512, 320, 256)
+
+[node name="DiningTable" type="StaticBody2D"]
+y_sort_enabled = true
+collision_layer = 2
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -48)
+texture = SubResource("AtlasTexture_5k4oe")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-160, -16, 32, 80, 160, 16, -32, -80)

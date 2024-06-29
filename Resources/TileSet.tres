@@ -1,13 +1,13 @@
 [gd_resource type="TileSet" load_steps=6 format=3 uid="uid://d2fkqu711avvx"]
 
-[ext_resource type="Texture2D" uid="uid://wqqpuhuoi145" path="res://Resources/Textures/Furnitures.png" id="1_tybqs"]
-[ext_resource type="Texture2D" uid="uid://bw4qjkdfcdpua" path="res://Resources/Textures/Tilesheet.png" id="2_cdwvj"]
+[ext_resource type="Texture2D" uid="uid://cenhepdkxl4wx" path="res://Resources/Textures/Furnitures.svg" id="1_q71uu"]
+[ext_resource type="Texture2D" uid="uid://c71mixevn1aai" path="res://Resources/Textures/Structures.svg" id="2_gywfu"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_3yt3u"]
 tile_data = PackedInt32Array(65536, 65537, 15, 131072, 1, 15, 1, 131073, 15)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h6vdg"]
-texture = ExtResource("1_tybqs")
+texture = ExtResource("1_q71uu")
 texture_region_size = Vector2i(128, 256)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, 96)
@@ -52,9 +52,24 @@ texture_region_size = Vector2i(128, 256)
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
 0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -25.6, -38.4, 0, 0, 19.2, 38.4, 0)
+4:1/0 = 0
+4:1/0/texture_origin = Vector2i(0, 96)
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -16, -32, 0, 0, 16, 32, 0)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, 96)
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -16, -32, 0, 0, 16, 32, 0)
+1:2/0 = 0
+1:2/0/texture_origin = Vector2i(0, 96)
+1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:2/0/physics_layer_0/angular_velocity = 0.0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-42.6667, 0, 0, -21.3333, 42.6667, 0, 0, 21.3333)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xl3do"]
-texture = ExtResource("2_cdwvj")
+texture = ExtResource("2_gywfu")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, -32)
@@ -358,6 +373,7 @@ texture_region_size = Vector2i(128, 128)
 3:0/0/texture_origin = Vector2i(0, -32)
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, 0, 0, -32, 64, 0, 0, 32)
 
 [resource]
 tile_shape = 1
