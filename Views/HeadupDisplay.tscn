@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b5s2hnud0tnbx"]
 
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="1_mcue7"]
-[ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="2_uhpxx"]
+[ext_resource type="Script" path="res://Scripts/SceneTransitionButton.cs" id="2_r5sou"]
 
 [node name="HUD" type="CanvasLayer"]
 
@@ -14,4 +14,5 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Back"
 icon = ExtResource("1_mcue7")
-script = ExtResource("2_uhpxx")
+script = ExtResource("2_r5sou")
+ScenePath = "res://Views/MainMenu.tscn"

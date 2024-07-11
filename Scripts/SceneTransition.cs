@@ -4,9 +4,6 @@ namespace SwinburneSimulator;
 
 public partial class SceneTransition : CanvasLayer
 {
-	[Export(PropertyHint.File, "*.tscn")]
-	public string NextScenePath = "";
-
 	private AnimationPlayer _animPlayer;
 
 	public override void _Ready()
@@ -23,8 +20,7 @@ public partial class SceneTransition : CanvasLayer
 		_animPlayer.Play("Fade");
 		await ToSignal(_animPlayer, "animation_finished");
 
-		if (NextScenePath != "") { GetTree().ChangeSceneToFile(NextScenePath); }
-		else { GetTree().ChangeSceneToFile(nextScene); }
+		GetTree().ChangeSceneToFile(nextScene);
 
 		_animPlayer.PlayBackwards("Fade");
 		await ToSignal(_animPlayer, "animation_finished");

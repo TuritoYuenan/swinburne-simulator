@@ -2,7 +2,7 @@ using Godot;
 
 namespace SwinburneSimulator;
 
-public partial class ButtonElevator : Button
+public partial class ElevatorButton : Button
 {
 	/// <summary>Floor to go to. Default is floor 5</summary>
 	[Export(PropertyHint.Range, "-2,11,1")]

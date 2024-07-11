@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ba1qg742vdncy"]
 
-[ext_resource type="Script" path="res://Scripts/ButtonElevator.cs" id="2_sw6xc"]
+[ext_resource type="Script" path="res://Scripts/ElevatorButton.cs" id="2_sw6xc"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b6hcr"]
 font_size = 64

@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_yccn2"]
 [ext_resource type="Script" path="res://Scripts/VolumeSlider.cs" id="2_ul5t4"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_q78gw"]
-[ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="4_1xscr"]
+[ext_resource type="Script" path="res://Scripts/SceneTransitionButton.cs" id="4_l7mpy"]
 
 [node name="TextureRect" type="TextureRect"]
 anchors_preset = 15
@@ -69,4 +69,5 @@ layout_mode = 2
 text = "Back to Main Menu"
 icon = ExtResource("3_q78gw")
 expand_icon = true
-script = ExtResource("4_1xscr")
+script = ExtResource("4_l7mpy")
+ScenePath = "res://Views/MainMenu.tscn"

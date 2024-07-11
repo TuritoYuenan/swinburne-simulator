@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://d2fkqu711avvx" path="res://Resources/TileSet.tres" id="1_cx4lh"]
 [ext_resource type="PackedScene" uid="uid://kmhllor875d2" path="res://Campus/Player.tscn" id="2_bmyme"]
 [ext_resource type="PackedScene" uid="uid://cd766ssdk686k" path="res://Campus/Elevator.tscn" id="2_mau3n"]
-[ext_resource type="PackedScene" uid="uid://b5s2hnud0tnbx" path="res://Views/HUD.tscn" id="3_pbeja"]
+[ext_resource type="PackedScene" uid="uid://b5s2hnud0tnbx" path="res://Views/HeadupDisplay.tscn" id="3_pbeja"]
 [ext_resource type="PackedScene" uid="uid://bxxsiw8gwhass" path="res://Campus/StudentTable.tscn" id="5_24v62"]
 [ext_resource type="PackedScene" uid="uid://4pi4ufqjo8xq" path="res://Campus/DiningTable.tscn" id="5_35lht"]
 [ext_resource type="PackedScene" uid="uid://bhl0xpwdmejq0" path="res://Campus/InfoRegion.tscn" id="5_gcyff"]

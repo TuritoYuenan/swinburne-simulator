@@ -24,7 +24,7 @@ buses/default_bus_layout="res://Resources/BusLayout.tres"
 
 [autoload]
 
-BackgroundMusic="*res://Views/BackgroundMusic.tscn"
+BackgroundMusic="*res://Audio/BackgroundMusic.tscn"
 SceneTransition="*res://Views/SceneTransition.tscn"
 
 [display]

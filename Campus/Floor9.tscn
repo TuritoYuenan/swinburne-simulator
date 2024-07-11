@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cbbm4yg4sph01"]
 
 [ext_resource type="TileSet" uid="uid://d2fkqu711avvx" path="res://Resources/TileSet.tres" id="1_5kdxa"]
-[ext_resource type="PackedScene" uid="uid://b5s2hnud0tnbx" path="res://Views/HUD.tscn" id="2_aso6l"]
+[ext_resource type="PackedScene" uid="uid://b5s2hnud0tnbx" path="res://Views/HeadupDisplay.tscn" id="2_aso6l"]
 [ext_resource type="PackedScene" uid="uid://cd766ssdk686k" path="res://Campus/Elevator.tscn" id="2_w2hk0"]
 [ext_resource type="PackedScene" uid="uid://kmhllor875d2" path="res://Campus/Player.tscn" id="5_yk1ek"]
 
