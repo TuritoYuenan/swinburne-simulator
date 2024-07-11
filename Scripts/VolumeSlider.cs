@@ -1,8 +1,10 @@
 using Godot;
 
+namespace SwinburneSimulator;
+
 public partial class VolumeSlider : HSlider
 {
-	[Export]
+	[Export(PropertyHint.LocalizableString)]
 	public string AudioBusName = "Master";
 
 	private int _bus;

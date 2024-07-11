@@ -5,7 +5,7 @@ namespace SwinburneSimulator;
 public partial class ButtonElevator : Button
 {
 	/// <summary>Floor to go to. Default is floor 5</summary>
-	[Export(PropertyHint.Range, "-2, 11")]
+	[Export(PropertyHint.Range, "-2,11,1")]
 	public int FloorNumber = 5;
 
 	public override void _Pressed()

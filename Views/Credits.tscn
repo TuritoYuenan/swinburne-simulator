@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://3kwcdrwp6l34" path="res://Resources/logo.svg" id="3_en1xo"]
 [ext_resource type="Script" path="res://Scripts/ButtonBack.cs" id="3_hl0i6"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_kt7vk"]
+[ext_resource type="Script" path="res://Scripts/LinkButton.cs" id="4_c650r"]
 [ext_resource type="Texture2D" uid="uid://dvowokwsrfn8q" path="res://Resources/Icons/github.svg" id="4_njrss"]
-[ext_resource type="Script" path="res://Scripts/ButtonGitHub.cs" id="5_fsj04"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_jnu5b"]
 font_size = 24
@@ -44,7 +44,7 @@ stretch_mode = 5
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "© 2024 Turito Yuenan <turitoyuenan@proton.me>
-Source code: https://github.com/TuritoYuenan/swinburne-simulator"
+GitHub repository: TuritoYuenan/swinburne-simulator"
 label_settings = SubResource("LabelSettings_jnu5b")
 horizontal_alignment = 1
 
@@ -57,7 +57,8 @@ alignment = 1
 layout_mode = 2
 text = "View Source code"
 icon = ExtResource("4_njrss")
-script = ExtResource("5_fsj04")
+script = ExtResource("4_c650r")
+URL = "https://github.com/TuritoYuenan/swinburne-simulator"
 
 [node name="BackButton" type="Button" parent="VBoxContainer/Buttons"]
 layout_mode = 2

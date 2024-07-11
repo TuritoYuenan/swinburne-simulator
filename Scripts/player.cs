@@ -4,7 +4,7 @@ namespace SwinburneSimulator;
 
 public partial class Player : CharacterBody2D
 {
-	[Export]
+	[Export(PropertyHint.Range, "0,600,10")]
 	public int Speed { get; set; } = 400;
 
 	public void GetInput()
