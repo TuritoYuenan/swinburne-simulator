@@ -1,12 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://kmhllor875d2"]
+[gd_scene load_steps=3 format=3 uid="uid://kmhllor875d2"]
 
 [ext_resource type="Script" path="res://Scripts/Player.cs" id="1_sup27"]
 [ext_resource type="Texture2D" uid="uid://boillxd0n557g" path="res://Resources/Textures/Razor.png" id="2_pt807"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_asvio"]
-radius = 12.0
-
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_sup27")
@@ -16,6 +14,5 @@ position = Vector2(2, -56)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_pt807")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -10)
-shape = SubResource("CircleShape2D_asvio")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-36, 0, 0, -18, 36, 0, 0, 18)
