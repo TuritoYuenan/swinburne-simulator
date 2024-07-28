@@ -4,7 +4,7 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1omyx"]
 atlas = ExtResource("1_n2ut5")
-region = Rect2(640, 256, 196, 256)
+region = Rect2(768, 256, 192, 256)
 
 [node name="TableStudent" type="StaticBody2D"]
 y_sort_enabled = true
