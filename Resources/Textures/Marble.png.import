@@ -2,9 +2,9 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boillxd0n557g"
-path.s3tc="res://.godot/imported/Razor.png-03a917cc6b608c00da3032077af75851.s3tc.ctex"
-path.etc2="res://.godot/imported/Razor.png-03a917cc6b608c00da3032077af75851.etc2.ctex"
+uid="uid://phui4p64w2gs"
+path.s3tc="res://.godot/imported/Marble.png-bce33857a895beae45a6b1e0f845dfdf.s3tc.ctex"
+path.etc2="res://.godot/imported/Marble.png-bce33857a895beae45a6b1e0f845dfdf.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
@@ -12,8 +12,8 @@ metadata={
 
 [deps]
 
-source_file="res://Resources/Textures/Razor.png"
-dest_files=["res://.godot/imported/Razor.png-03a917cc6b608c00da3032077af75851.s3tc.ctex", "res://.godot/imported/Razor.png-03a917cc6b608c00da3032077af75851.etc2.ctex"]
+source_file="res://Resources/Textures/Marble.png"
+dest_files=["res://.godot/imported/Marble.png-bce33857a895beae45a6b1e0f845dfdf.s3tc.ctex", "res://.godot/imported/Marble.png-bce33857a895beae45a6b1e0f845dfdf.etc2.ctex"]
 
 [params]
 

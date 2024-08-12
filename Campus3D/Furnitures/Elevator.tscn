@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://u3137wcnktbs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lyug2"]
+size = Vector3(2, 4, 2)
+
+[node name="Elevator" type="Area3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_lyug2")
