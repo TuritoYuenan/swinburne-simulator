@@ -71,8 +71,6 @@ motion_mode = 1
 platform_floor_layers = 4294967293
 platform_wall_layers = 2
 
-[node name="Camera2D" type="Camera2D" parent="Walls/Player"]
-
 [node name="Furnitures" type="TileMap" parent="Walls"]
 y_sort_enabled = true
 tile_set = ExtResource("1_cx4lh")

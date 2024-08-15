@@ -16,3 +16,5 @@ texture = ExtResource("2_pt807")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(-36, 0, 0, -18, 36, 0, 0, 18)
+
+[node name="Camera2D" type="Camera2D" parent="."]
