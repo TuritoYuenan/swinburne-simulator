@@ -14,6 +14,8 @@ config/name="Swinburne Simulator"
 config/version="0.5.1"
 run/main_scene="res://Views/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
+run/max_fps=60
+run/low_processor_mode=true
 boot_splash/bg_color=Color(0, 0.0666667, 0.133333, 1)
 boot_splash/image="res://Resources/Backgrounds/splash.png"
 config/icon="res://Resources/icon.svg"
@@ -31,6 +33,7 @@ SceneTransition="*res://Views/SceneTransition.tscn"
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
+window/ios/allow_high_refresh_rate=false
 mouse_cursor/size/viewport_height=648
 mouse_cursor/size/viewport_width=1152
 
@@ -111,4 +114,5 @@ jump={
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
+anti_aliasing/screen_space_roughness_limiter/enabled=false
 environment/defaults/default_clear_color=Color(0.529412, 0.807843, 0.921569, 1)

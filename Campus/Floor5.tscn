@@ -1,15 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://cql2rotk5xoi8"]
+[gd_scene load_steps=6 format=3 uid="uid://cql2rotk5xoi8"]
 
 [ext_resource type="TileSet" uid="uid://d2fkqu711avvx" path="res://Resources/TileSet.tres" id="1_cx4lh"]
 [ext_resource type="PackedScene" uid="uid://kmhllor875d2" path="res://Campus/Player.tscn" id="2_bmyme"]
 [ext_resource type="PackedScene" uid="uid://cd766ssdk686k" path="res://Campus/Elevator.tscn" id="2_mau3n"]
 [ext_resource type="PackedScene" uid="uid://b5s2hnud0tnbx" path="res://Views/HeadupDisplay.tscn" id="3_pbeja"]
-[ext_resource type="PackedScene" uid="uid://bxxsiw8gwhass" path="res://Campus/StudentTable.tscn" id="5_24v62"]
-[ext_resource type="PackedScene" uid="uid://4pi4ufqjo8xq" path="res://Campus/DiningTable.tscn" id="5_35lht"]
 [ext_resource type="PackedScene" uid="uid://bhl0xpwdmejq0" path="res://Campus/InfoRegion.tscn" id="5_gcyff"]
-[ext_resource type="PackedScene" uid="uid://cvu420vup6jy6" path="res://Campus/DisplayTable.tscn" id="7_4bx81"]
-[ext_resource type="PackedScene" uid="uid://br66qdbyoec8c" path="res://Campus/StudentTable2.tscn" id="7_rtwyb"]
-[ext_resource type="PackedScene" uid="uid://coqdgxufeic4y" path="res://Campus/MetalCabinet.tscn" id="8_e6x8b"]
 
 [node name="FloorLevel" type="Node2D"]
 
@@ -84,96 +79,9 @@ tile_set = ExtResource("1_cx4lh")
 format = 2
 layer_0/name = "Walls"
 layer_0/y_sort_enabled = true
-layer_0/tile_data = PackedInt32Array(131061, 65536, 1, 196597, 65536, 1, 262132, 65536, 1, -1441791, 131072, 1, 327679, 262144, 0, 262142, 262144, 0, 196606, 262144, 0, -2, 0, 2, 458747, 0, 2, -4, 327680, 1, 720887, 262144, 0, 786423, 262144, 0, 917496, 262144, 0, 983033, 262144, 0, 1114106, 262144, 0, 1179642, 262144, 0, 1310715, 262144, 0, 1376252, 262144, 0, 1179644, 262144, 0, 1048571, 262144, 0, 983035, 262144, 0, 851962, 262144, 0, 786425, 262144, 0, 655352, 262144, 0, 589816, 262144, 0, 393206, 262144, 0, 458743, 262144, 0, 524277, 262144, 0, 589814, 262144, 0, -131061, 131072, 1, 458739, 65536, 2, 393203, 65536, 2, 327668, 65536, 2, 524274, 393217, 13, 1245181, 262144, 0)
+layer_0/tile_data = PackedInt32Array(131061, 65536, 1, 196597, 65536, 1, 262132, 65536, 1, -1441791, 131072, 1, 327679, 262144, 0, 262142, 262144, 0, 196606, 262144, 0, -2, 0, 2, 458747, 0, 2, -4, 327680, 1, 720887, 262144, 0, 786423, 262144, 0, 917496, 262144, 0, 983033, 262144, 0, 1114106, 262144, 0, 1179642, 262144, 0, 1310715, 262144, 0, 1376252, 262144, 0, 1179644, 262144, 0, 1048571, 262144, 0, 983035, 262144, 0, 851962, 262144, 0, 786425, 262144, 0, 655352, 262144, 0, 589816, 262144, 0, 393206, 262144, 0, 458743, 262144, 0, 524277, 262144, 0, 589814, 262144, 0, -131061, 131072, 1, 458739, 65536, 2, 393203, 65536, 2, 327668, 65536, 2, 524274, 393217, 13, 1245181, 262144, 0, 1245176, 393216, 0, 1048572, 524288, 0, 458750, 131072, 2, 851959, 393216, 0, 1048568, 393216, 0, 655349, 393216, 0, 524278, 393216, 0, 720888, 393216, 0, 917497, 393216, 0, 1245178, 393216, 0, 1114107, 393216, 0, 1310716, 393216, 0, 1441787, 393216, 0, 1703933, 327680, 2, -917504, 393216, 1, -1048575, 393216, 1, -655362, 393216, 1, -524291, 393216, 1, -393218, 393216, 1, -524289, 393216, 1, -786431, 393216, 1, -917502, 393216, 1, -786429, 393216, 1, -655358, 393216, 1, -458752, 393216, 1, -262145, 393216, 1, -786435, 393216, 1, -917507, 262144, 1)
 layer_1/name = "Doors"
 layer_1/y_sort_enabled = true
 layer_1/tile_data = PackedInt32Array(720890, 262145, 11, 786426, 262145, 11, 1, 262145, 11, 65537, 262145, 11)
-
-[node name="DiningTable" parent="Walls/Furnitures" instance=ExtResource("5_35lht")]
-position = Vector2(-224, 176)
-
-[node name="LabRoom" type="Node2D" parent="Walls/Furnitures"]
-y_sort_enabled = true
-
-[node name="TableTeacher" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-928, 624)
-
-[node name="TableStudent" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-1312, 304)
-
-[node name="TableStudent2" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-1120, 400)
-
-[node name="TableStudent3" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-928, 496)
-
-[node name="TableStudent4" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-736, 592)
-
-[node name="TableStudent5" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-544, 688)
-
-[node name="TableStudent6" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-1184, 240)
-
-[node name="TableStudent7" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-992, 336)
-
-[node name="TableStudent8" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-800, 432)
-
-[node name="TableStudent9" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-608, 528)
-
-[node name="TableStudent10" parent="Walls/Furnitures/LabRoom" instance=ExtResource("5_24v62")]
-position = Vector2(-416, 624)
-
-[node name="TableDisplay" parent="Walls/Furnitures/LabRoom" instance=ExtResource("7_4bx81")]
-position = Vector2(-256, 832)
-
-[node name="MetalCabinet" parent="Walls/Furnitures/LabRoom" instance=ExtResource("8_e6x8b")]
-position = Vector2(-352, 528)
-
-[node name="ConceptRoom" type="Node2D" parent="Walls/Furnitures"]
-y_sort_enabled = true
-
-[node name="TableTeacher" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(-224, -400)
-
-[node name="TableStudent1" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(224, -496)
-
-[node name="TableStudent2" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(96, -432)
-
-[node name="TableStudent3" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(-96, -336)
-
-[node name="TableStudent4" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(-224, -272)
-
-[node name="TableStudent5" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(352, -432)
-
-[node name="TableStudent6" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(224, -368)
-
-[node name="TableStudent7" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(32, -272)
-
-[node name="TableStudent8" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(-96, -208)
-
-[node name="TableStudent9" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(480, -368)
-
-[node name="TableStudent10" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(352, -304)
-
-[node name="TableStudent11" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(160, -208)
-
-[node name="TableStudent12" parent="Walls/Furnitures/ConceptRoom" instance=ExtResource("7_rtwyb")]
-position = Vector2(32, -144)
 
 [node name="HUD" parent="." instance=ExtResource("3_pbeja")]
