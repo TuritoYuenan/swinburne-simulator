@@ -38,11 +38,13 @@ public partial class Player3D : CharacterBody3D
 		}
 
 		_jumping = Input.IsActionJustPressed("jump");
+		if (Input.IsKeyPressed(Key.Escape)) ReleaseMouse();
+		if (Input.IsKeyPressed(Key.Enter)) CaptureMouse();
 	}
 
 	public override void _PhysicsProcess(double delta)
 	{
-		if (_mouseCaptured) HandleJoypadCameraRotation(delta);
+		if (_mouseCaptured) RotateCameraJoypad(delta);
 		Velocity = Walk((float)delta) + Gravity((float)delta) + Jump((float)delta);
 		MoveAndSlide();
 	}
@@ -61,11 +63,13 @@ public partial class Player3D : CharacterBody3D
 
 	private void RotateCamera(float sensitivityMod = 1.0f)
 	{
-		_camera.RotateY(-_lookDir.X * CameraSensitivity * sensitivityMod);
-		_camera.RotateX((float)Mathf.Clamp(_camera.Rotation.X - _lookDir.Y * CameraSensitivity * sensitivityMod, -1.5, 1.5));
+		float sensitivity = CameraSensitivity * sensitivityMod;
+
+		_camera.RotateY(-_lookDir.X * sensitivity);
+		_camera.RotateX((float)Mathf.Clamp(_camera.Rotation.X - _lookDir.Y * sensitivity, -1.5, 1.5));
 	}
 
-	private void HandleJoypadCameraRotation(double delta, float sensitivityMod = 1.0f)
+	private void RotateCameraJoypad(double delta, float sensitivityMod = 1.0f)
 	{
 		Vector2 joypadDir = Input.GetVector("look_left", "look_right", "look_up", "look_down");
 		if (joypadDir.Length() > 0)

@@ -13,6 +13,7 @@ material = SubResource("StandardMaterial3D_h101b")
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_qfd23")
+JumpHeight = 2.0
 
 [node name="CollisionPolygon3D" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_gocbr")
