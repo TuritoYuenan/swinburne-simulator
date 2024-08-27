@@ -10,7 +10,7 @@ public partial class Elevator : Area2D
 	public override void _Ready()
 	{
 		_ui = GD.Load<PackedScene>("res://Views/ElevatorUI.tscn").Instantiate();
-		_hud = GetNode<CanvasLayer>("/root/FloorLevel/HUD");
+		_hud = GetNode<CanvasLayer>("/root/Level/HUD");
 		BodyEntered += ShowElevatorUI;
 		BodyExited += HideElevatorUI;
 	}
