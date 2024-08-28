@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://kmhllor875d2"]
 
-[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_sup27"]
+[ext_resource type="Script" path="res://Scripts/Player2D.cs" id="1_sup27"]
 [ext_resource type="Texture2D" uid="uid://boillxd0n557g" path="res://Resources/Textures/Razor.png" id="2_pt807"]
 
 [node name="Player" type="CharacterBody2D"]

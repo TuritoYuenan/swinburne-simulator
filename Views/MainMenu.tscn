@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://iedskap15can"]
+[gd_scene load_steps=10 format=3 uid="uid://iedskap15can"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_d4geo"]
 [ext_resource type="Texture2D" uid="uid://3kwcdrwp6l34" path="res://Resources/logo.svg" id="3_84wc0"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bllrv5rm284nk" path="res://Resources/Icons/settings.svg" id="6_sxsl6"]
 [ext_resource type="Texture2D" uid="uid://lecm4n1uv8mt" path="res://Resources/Icons/credits.svg" id="8_tf52j"]
 [ext_resource type="Script" path="res://Scripts/ExitButton.cs" id="8_ttvgp"]
+[ext_resource type="Script" path="res://Scripts/Footer.cs" id="9_p1svf"]
 [ext_resource type="Texture2D" uid="uid://niwlxmlyxr8o" path="res://Resources/Icons/exit.svg" id="10_6f61r"]
 
 [node name="TextureRect" type="TextureRect"]
@@ -78,7 +79,7 @@ text = "Exit"
 icon = ExtResource("10_6f61r")
 script = ExtResource("8_ttvgp")
 
-[node name="HSplitContainer" type="HSplitContainer" parent="."]
+[node name="Footer" type="HSplitContainer" parent="."]
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
@@ -87,12 +88,13 @@ anchor_bottom = 1.0
 offset_top = -25.0
 grow_horizontal = 2
 grow_vertical = 0
+script = ExtResource("9_p1svf")
 
-[node name="Copyright" type="Label" parent="HSplitContainer"]
+[node name="Copyright" type="Label" parent="Footer"]
 layout_mode = 2
 text = "© 2024 Turito Yuenan <turitoyuenan.pages.dev>"
 
-[node name="Version" type="Label" parent="HSplitContainer"]
+[node name="Version" type="Label" parent="Footer"]
 layout_mode = 2
-text = "Version 0.2.0"
+text = "Version #.#.#"
 horizontal_alignment = 2

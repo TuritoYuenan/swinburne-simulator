@@ -1,8 +1,8 @@
 using Godot;
 
-namespace SwinburneSimulator;
+namespace SwinburneSimulator.Scripts;
 
-public partial class Player : CharacterBody2D
+public partial class Player2D : CharacterBody2D
 {
 	[Export(PropertyHint.Range, "0,600,10")]
 	public int Speed { get; set; } = 400;

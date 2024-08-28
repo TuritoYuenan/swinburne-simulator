@@ -1,6 +1,6 @@
 using Godot;
 
-namespace SwinburneSimulator;
+namespace SwinburneSimulator.Scripts;
 
 public partial class ExitButton : Button
 {

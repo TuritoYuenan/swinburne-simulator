@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cetoy028gj3d0"]
+[gd_scene load_steps=9 format=3 uid="uid://cetoy028gj3d0"]
 
 [ext_resource type="Texture2D" uid="uid://c6sdxd82xaqmi" path="res://Resources/Backgrounds/MainMenu.jpeg" id="1_8q873"]
+[ext_resource type="Script" path="res://Scripts/Footer.cs" id="2_uvkol"]
 [ext_resource type="Texture2D" uid="uid://3kwcdrwp6l34" path="res://Resources/logo.svg" id="3_en1xo"]
 [ext_resource type="Texture2D" uid="uid://b3egk10ixfraq" path="res://Resources/Icons/return.svg" id="3_kt7vk"]
 [ext_resource type="Script" path="res://Scripts/LinkButton.cs" id="4_c650r"]
@@ -35,13 +36,20 @@ offset_right = 1240.0
 offset_bottom = 680.0
 theme_override_constants/separation = 32
 alignment = 1
+script = ExtResource("2_uvkol")
 
 [node name="Logo" type="TextureRect" parent="VBoxContainer"]
 layout_mode = 2
 texture = ExtResource("3_en1xo")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Version" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+text = "Version #.#.#"
+label_settings = SubResource("LabelSettings_jnu5b")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
 layout_mode = 2
 text = "© 2024 Turito Yuenan <turitoyuenan@proton.me>
 GitHub repository: TuritoYuenan/swinburne-simulator"

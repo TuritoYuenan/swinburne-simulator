@@ -1,5 +1,7 @@
 using Godot;
 
+namespace SwinburneSimulator.Scripts;
+
 public partial class InfoBubble : CanvasLayer
 {
 	public override void _Ready()
