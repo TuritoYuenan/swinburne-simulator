@@ -102,6 +102,11 @@ texture_region_size = Vector2i(128, 256)
 9:2/0/texture_origin = Vector2i(0, 96)
 9:2/0/y_sort_origin = -65
 9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -32, -64, 0, 0, 32, 64, 0)
+10:0/size_in_atlas = Vector2i(2, 2)
+10:0/0 = 0
+10:0/0/texture_origin = Vector2i(0, 192)
+10:0/0/y_sort_origin = -100
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, 0, 0, -32, 10.6787, -26.6607, -50.5581, 2.82843)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xl3do"]
 texture = ExtResource("2_gywfu")
