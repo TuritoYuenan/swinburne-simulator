@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 16px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+	background: url(/main-menu.jpeg) no-repeat;
+	background-size: contain;
+}
+
+button {
+	padding: 1rem;
+	color: white;
+	background-color: #d33;
+	border: none;
+	border-radius: 1rem;
+	box-shadow: 0 5px #800;
+	transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	font-size: larger;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #f55;
+}
+
+button:active {
+	transform: translateY(5px);
+	box-shadow: none;
+}
+
+button.wide {
+	min-width: 50ch;
+}
