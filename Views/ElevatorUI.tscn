@@ -62,13 +62,15 @@ text = "Floor 8"
 
 [node name="Button7" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
 layout_mode = 2
-disabled = true
 text = "Floor 7"
+script = ExtResource("2_sw6xc")
+FloorNumber = 7
 
 [node name="Button6" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
 layout_mode = 2
-disabled = true
 text = "Floor 6"
+script = ExtResource("2_sw6xc")
+FloorNumber = 6
 
 [node name="Button5" type="Button" parent="MarginContainer/HSplitContainer/GridContainer"]
 layout_mode = 2
