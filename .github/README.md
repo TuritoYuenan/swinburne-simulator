@@ -1,4 +1,4 @@
-![Project GitHub Banner](Swinburne%20Simulator.png)
+![Project GitHub Banner](Banner.png)
 
 # Swinburne Simulator
 
