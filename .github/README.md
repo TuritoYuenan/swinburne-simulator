@@ -2,26 +2,42 @@
 
 # Swinburne Simulator
 
-**<center>Visit the Swinburne University HCMC Campus via an interactive 2D experience</center>**
+## Project Idea
 
-## Description
+We make a video game that provides you a virtual tour at the A35 building of the Swinburne University campus in Ho Chi Minh city, Vietnam. The objective is to showcase the campus amenities to everyone interested (e.g. potential students, parents, businesses)
 
-This is a video game that allows you to explore and interact with the Swinburne University campus at A35 Bach Dang, Ho Chi Minh city, Vietnam - via your device!
+## Project Implementation
 
-The objective is to showcase the campus amenities to everyone interested (e.g. potential students, parents, businesses)
+### Roblox impl stack (current)
 
-## Showcases
+- Deployment: <https://roblox.com/games/1437186416>
+- Source code: [impl-roblox](../impl-roblox/)
+- Level design & Development: Roblox Studio
+- Asset design: Inkscape
 
+### Threlte impl stack (archived)
 
+- Source code: [impl-threlte](../impl-threlte/)
+- Level design: Three.js
+- Development: Svelte, Threlte
 
-## How to play
+### Godot impl stack (archived)
 
+- Source code: [impl-godot](../impl-godot/)
+- Level design & Development: Godot Mono
+- Asset design: Figma (yes I really used Figma to do tilesets)
 
+## Stakeholders
 
-## How to develop
-
-
-
-## Credits
-
-+ Nguyen Ta Minh Triet (Turito Yuenan) - K5 Computer Science Student @ Swinburne University
++ student Minh-Triet (Turito Yuenan)
+	- Author and primary contributor
++ student Bao-Ngoc (hann)
+	- Design support in Godot Impl
++ student Ngoc-Anh (Na)
+	- Design support in Godot Impl
++ student Vinh-Khang (katiue)
+	- Idea & early version support
++ Ms. Titan Vo
+	- Supervisor from April - September
++ Mr. Duy Nguyen
+	- Supervisor from October
