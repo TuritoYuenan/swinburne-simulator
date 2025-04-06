@@ -8,20 +8,20 @@ We make a video game that provides you a virtual tour at the A35 building of the
 
 ## Project Implementation
 
-### Roblox impl stack (current)
+### The Roblox way (current)
 
 - Deployment: <https://roblox.com/games/1437186416>
 - Source code: [impl-roblox](../impl-roblox/)
 - Level design & Development: Roblox Studio
 - Asset design: Inkscape
 
-### Threlte impl stack (archived)
+### The Threlte way (discontinued)
 
 - Source code: [impl-threlte](../impl-threlte/)
 - Level design: Three.js
 - Development: Svelte, Threlte
 
-### Godot impl stack (archived)
+### The Godot way (discontinued)
 
 - Source code: [impl-godot](../impl-godot/)
 - Level design & Development: Godot Mono
