@@ -12,7 +12,8 @@ We make a video game that provides you a virtual tour at the A35 building of the
 
 - Deployment: <https://roblox.com/games/1437186416>
 - Source code: [impl-roblox](../impl-roblox/)
-- Level design & Development: Roblox Studio
+- Level design: Roblox Studio
+- Development: Lua (Luau)
 - Asset design: Inkscape
 
 ### The Threlte way (discontinued)
@@ -24,7 +25,8 @@ We make a video game that provides you a virtual tour at the A35 building of the
 ### The Godot way (discontinued)
 
 - Source code: [impl-godot](../impl-godot/)
-- Level design & Development: Godot Mono
+- Level design: Godot Mono
+- Development: C#
 - Asset design: Figma (yes I really used Figma to do tilesets)
 
 ## Stakeholders
